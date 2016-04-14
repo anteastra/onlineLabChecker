@@ -5,7 +5,7 @@
 
     <view-state id="main">
         <on-render>
-            <evaluate expression="courseDAOImpl.getCourses()"/>
+            <evaluate expression="courseThemeDAOImpl.getCourseThemes(1)"/>
         </on-render>
     </view-state>
 </flow>

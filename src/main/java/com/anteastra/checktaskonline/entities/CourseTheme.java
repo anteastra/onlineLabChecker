@@ -7,6 +7,8 @@ public class CourseTheme {
     private int id;
     private String name;
     private String description;
+    private Course course;
+    private Integer orderNo;
 
     public int getId() {
         return id;
@@ -42,6 +44,7 @@ public class CourseTheme {
         if (id != that.id) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (description != null ? !description.equals(that.description) : that.description != null) return false;
+        if (course != null ? !course.equals(that.course) : that.course != null) return false;
 
         return true;
     }
@@ -51,6 +54,23 @@ public class CourseTheme {
         int result = id;
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
+        result = 31 * result + (course != null ? course.hashCode() : 0);
         return result;
+    }
+
+    public Course getCourseId() {
+        return course;
+    }
+
+    public void setCourseId(Course course) {
+        this.course = course;
+    }
+
+    public Integer getOrderNo() {
+        return orderNo;
+    }
+
+    public void setOrderNo(Integer orderNo) {
+        this.orderNo = orderNo;
     }
 }

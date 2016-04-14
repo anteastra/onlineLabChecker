@@ -8,6 +8,9 @@
         <id name="id">
             <column name="id" sql-type="int(11)"/>
         </id>
+        <property name="groupId">
+            <column name="group_id" sql-type="int(11)" not-null="true"/>
+        </property>
         <property name="name">
             <column name="name" sql-type="varchar(50)" length="50" not-null="true"/>
         </property>

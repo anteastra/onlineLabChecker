@@ -8,6 +8,9 @@
         <id name="id">
             <column name="id" sql-type="int(11)"/>
         </id>
+        <property name="courseThemeId">
+            <column name="course_theme_id" sql-type="int(11)" not-null="true"/>
+        </property>
         <property name="name">
             <column name="name" sql-type="varchar(255)" not-null="true"/>
         </property>

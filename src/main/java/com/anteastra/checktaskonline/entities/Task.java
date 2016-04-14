@@ -7,6 +7,7 @@ public class Task {
     private int id;
     private String name;
     private String description;
+    private Integer courseThemeId;
 
     public int getId() {
         return id;
@@ -52,5 +53,13 @@ public class Task {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (description != null ? description.hashCode() : 0);
         return result;
+    }
+
+    public Integer getCourseThemeId() {
+        return courseThemeId;
+    }
+
+    public void setCourseThemeId(Integer courseThemeId) {
+        this.courseThemeId = courseThemeId;
     }
 }

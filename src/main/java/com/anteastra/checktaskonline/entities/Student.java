@@ -8,6 +8,7 @@ public class Student {
     private String name;
     private String surname;
     private String fathername;
+    private Integer groupId;
 
     public int getId() {
         return id;
@@ -63,5 +64,13 @@ public class Student {
         result = 31 * result + (surname != null ? surname.hashCode() : 0);
         result = 31 * result + (fathername != null ? fathername.hashCode() : 0);
         return result;
+    }
+
+    public Integer getGroupId() {
+        return groupId;
+    }
+
+    public void setGroupId(Integer groupId) {
+        this.groupId = groupId;
     }
 }
